@@ -1,0 +1,291 @@
+html,
+body {
+  margin: 0;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  background-color: #4A3BBC;
+  width: 100vw;
+  position: relative;
+}
+
+.container {
+  padding: 35px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.container .logo {
+  margin-top: 50px;
+}
+
+.body-text h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 950;
+  font-size: 68.3858px;
+  line-height: 96.9%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+  position: relative;
+  max-width: 500px;
+  margin: auto;
+
+  z-index: 99;
+
+}
+
+.body-text h1 span {
+  font-family: 'Chiller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 196.684px;
+  line-height: 96.9%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+  color: #F6BE11;
+  position: absolute;
+  top: -40%;
+  left: 31.2%;
+}
+
+.body-text p {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 122.9%;
+  text-align: center;
+
+  color: #FFFFFF;
+  max-width: 440px;
+  margin: auto;
+
+  margin-top: 33px;
+  position: relative;
+  z-index: 99;
+}
+
+
+.body-text form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 44px;
+
+
+}
+
+.body-text form input {
+  width: 370px;
+  border: 1.56566px solid #FFFFFF;
+  background-color: transparent;
+  outline: 0;
+  padding: 11px;
+  color: #FFFFFF;
+  font-family: 'Archivo';
+  font-weight: 600;
+  font-size: 15.0896px;
+  line-height: 96.9%;
+  text-align: left;
+  letter-spacing: 0.005em;
+}
+
+.body-text form input::placeholder {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 15.0896px;
+  line-height: 96.9%;
+  text-align: left;
+  letter-spacing: 0.005em;
+
+  color: rgba(255, 255, 255, 0.36);
+}
+
+
+
+.body-text form button {
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16.6196px;
+  line-height: 96.9%;
+  /* or 16px */
+
+  text-align: center;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+
+  color: #4A3BBC;
+
+
+  background: #F6BE11;
+  border: 0;
+  padding: 12.5px 20px;
+  height: 100%;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+
+.body-text form button:hover {
+  background-color: #fffefd;
+}
+
+
+.footer a {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 96.9%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.footer .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 12px;
+}
+
+.footer .social-media a {
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.footer .social-media a:hover {
+  scale: 1.2;
+}
+
+/* -------------------------- */
+
+
+.scroll {
+  position: relative;
+  width: 100vw;
+  min-height: 150px;
+  overflow: hidden;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  font-family: 'Work Sans', sans-serif;
+
+
+}
+
+.m-scroll {
+  overflow: hidden;
+  height: 100%;
+  white-space: nowrap;
+  animation: scrollText 170s infinite linear;
+  margin: 0;
+  font-size: 0;
+  display: inline-block;
+}
+
+.m-scroll span {
+  font-size: 50px;
+  display: inline-block;
+  min-width: 100vw;
+  margin: 0;
+  padding: 0;
+  color: #4A3BBC;
+  text-shadow: rgba(255, 255, 255, 0.432) 3px 0px 0px, rgba(255, 255, 255, 0.315) 2.83487px 0.981584px 0px, rgba(255, 255, 255, 0.315) 2.35766px 1.85511px 0px, rgba(255, 255, 255, 0.315) 1.62091px 2.52441px 0px, rgba(255, 255, 255, 0.315) 0.705713px 2.91581px 0px, rgba(255, 255, 255, 0.315) -0.287171px 2.98622px 0px, rgba(255, 255, 255, 0.315) -1.24844px 2.72789px 0px, rgba(255, 255, 255, 0.315) -2.07227px 2.16926px 0px, rgba(255, 255, 255, 0.315) -2.66798px 1.37182px 0px, rgba(255, 255, 255, 0.315) -2.96998px 0.42336px 0px, rgba(255, 255, 255, 0.315) -2.94502px -0.571704px 0px, rgba(255, 255, 255, 0.315) -2.59586px -1.50383px 0px, rgba(255, 255, 255, 0.315) -1.96093px -2.27041px 0px, rgba(255, 255, 255, 0.315) -1.11013px -2.78704px 0px, rgba(255, 255, 255, 0.315) -0.137119px -2.99686px 0px, rgba(255, 255, 255, 0.315) 0.850987px -2.87677px 0px, rgba(255, 255, 255, 0.315) 1.74541px -2.43999px 0px, rgba(255, 255, 255, 0.315) 2.44769px -1.73459px 0px, rgba(255, 255, 255, 0.315) 2.88051px -0.838247px 0px;
+
+  opacity: 15%;
+  font-size: 14rem;
+  margin-left: 25px;
+  letter-spacing: .1em;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+@media all and (max-width: 462px) {
+  .body-text h1 {
+    font-size: 50px;
+    max-width: 400px;
+
+
+  }
+
+  .body-text h1 span {
+    font-size: 140px;
+    top: -40%;
+    left: 32%;
+  }
+
+  .body-text form input {
+    width: 300px;
+  }
+
+  .body-text p {
+    font-size: 17px;
+    max-width: 370px;
+  }
+
+  .m-scroll span {
+    font-size: 40px;
+    display: inline-block;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+    color: #4A3BBC;
+    text-shadow: rgba(255, 255, 255, 0.432) 3px 0px 0px, rgba(255, 255, 255, 0.315) 2.83487px 0.981584px 0px, rgba(255, 255, 255, 0.315) 2.35766px 1.85511px 0px, rgba(255, 255, 255, 0.315) 1.62091px 2.52441px 0px, rgba(255, 255, 255, 0.315) 0.705713px 2.91581px 0px, rgba(255, 255, 255, 0.315) -0.287171px 2.98622px 0px, rgba(255, 255, 255, 0.315) -1.24844px 2.72789px 0px, rgba(255, 255, 255, 0.315) -2.07227px 2.16926px 0px, rgba(255, 255, 255, 0.315) -2.66798px 1.37182px 0px, rgba(255, 255, 255, 0.315) -2.96998px 0.42336px 0px, rgba(255, 255, 255, 0.315) -2.94502px -0.571704px 0px, rgba(255, 255, 255, 0.315) -2.59586px -1.50383px 0px, rgba(255, 255, 255, 0.315) -1.96093px -2.27041px 0px, rgba(255, 255, 255, 0.315) -1.11013px -2.78704px 0px, rgba(255, 255, 255, 0.315) -0.137119px -2.99686px 0px, rgba(255, 255, 255, 0.315) 0.850987px -2.87677px 0px, rgba(255, 255, 255, 0.315) 1.74541px -2.43999px 0px, rgba(255, 255, 255, 0.315) 2.44769px -1.73459px 0px, rgba(255, 255, 255, 0.315) 2.88051px -0.838247px 0px;
+
+    opacity: 15%;
+    font-size: 14rem;
+    margin-left: 25px;
+    letter-spacing: .1em;
+  }
+
+}
+
+/* ----------------- animations ---------- */
+
+
+.fade {
+  
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+.fade.show {
+  opacity: 1;
+}
