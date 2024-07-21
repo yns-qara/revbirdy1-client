@@ -1,10 +1,17 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_sqlalchemy import SQLAlchemy
 from config import Config
+from flask_httpauth import HTTPBasicAuth
+from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
 app.config.from_object(Config)
 db = SQLAlchemy(app)
+auth = HTTPBasicAuth()
+
+users = {
+    "admin": generate_password_hash("ishouldmakeitprivate")
+}
 
 class Email(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -33,6 +40,17 @@ def submit():
         flash('Email is required!', 'warning')
     
     return redirect(url_for('index'))
+
+@auth.verify_password
+def verify_password(username, password):
+    if username in users and check_password_hash(users.get(username), password):
+        return username
+
+@app.route('/emails', methods=['GET'])
+@auth.login_required
+def view_emails():
+    emails = Email.query.all()
+    return render_template('emails.html', emails=emails)
 
 # if __name__ == '__main__':
 #     app.run(debug=True)
